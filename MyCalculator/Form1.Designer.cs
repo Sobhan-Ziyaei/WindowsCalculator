@@ -32,10 +32,10 @@
             label2 = new Label();
             txtNum1 = new NumericUpDown();
             txtNum2 = new NumericUpDown();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            btnPlus = new Button();
+            btnMinus = new Button();
+            btnMultiply = new Button();
+            btnDivide = new Button();
             ((System.ComponentModel.ISupportInitialize)txtNum1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtNum2).BeginInit();
             SuspendLayout();
@@ -72,55 +72,55 @@
             txtNum2.Size = new Size(296, 26);
             txtNum2.TabIndex = 1;
             // 
-            // button1
+            // btnPlus
             // 
-            button1.Location = new Point(62, 113);
-            button1.Name = "button1";
-            button1.Size = new Size(60, 53);
-            button1.TabIndex = 2;
-            button1.Text = "+";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnPlus.Location = new Point(62, 113);
+            btnPlus.Name = "btnPlus";
+            btnPlus.Size = new Size(60, 53);
+            btnPlus.TabIndex = 2;
+            btnPlus.Text = "+";
+            btnPlus.UseVisualStyleBackColor = true;
+            btnPlus.Click += btnPlusClick;
             // 
-            // button2
+            // btnMinus
             // 
-            button2.Location = new Point(128, 113);
-            button2.Name = "button2";
-            button2.Size = new Size(60, 53);
-            button2.TabIndex = 2;
-            button2.Text = "-";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnMinus.Location = new Point(128, 113);
+            btnMinus.Name = "btnMinus";
+            btnMinus.Size = new Size(60, 53);
+            btnMinus.TabIndex = 2;
+            btnMinus.Text = "-";
+            btnMinus.UseVisualStyleBackColor = true;
+            btnMinus.Click += btnMinusClick;
             // 
-            // button3
+            // btnMultiply
             // 
-            button3.Location = new Point(194, 113);
-            button3.Name = "button3";
-            button3.Size = new Size(60, 53);
-            button3.TabIndex = 2;
-            button3.Text = "*";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            btnMultiply.Location = new Point(194, 113);
+            btnMultiply.Name = "btnMultiply";
+            btnMultiply.Size = new Size(60, 53);
+            btnMultiply.TabIndex = 2;
+            btnMultiply.Text = "*";
+            btnMultiply.UseVisualStyleBackColor = true;
+            btnMultiply.Click += btnMultiplyClick;
             // 
-            // button4
+            // btnDivide
             // 
-            button4.Location = new Point(260, 113);
-            button4.Name = "button4";
-            button4.Size = new Size(60, 53);
-            button4.TabIndex = 2;
-            button4.Text = "/";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            btnDivide.Location = new Point(260, 113);
+            btnDivide.Name = "btnDivide";
+            btnDivide.Size = new Size(60, 53);
+            btnDivide.TabIndex = 2;
+            btnDivide.Text = "/";
+            btnDivide.UseVisualStyleBackColor = true;
+            btnDivide.Click += btnDivideClick;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(410, 178);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnDivide);
+            Controls.Add(btnMultiply);
+            Controls.Add(btnMinus);
+            Controls.Add(btnPlus);
             Controls.Add(txtNum2);
             Controls.Add(txtNum1);
             Controls.Add(label2);
@@ -144,9 +144,9 @@
         private Label label2;
         private NumericUpDown txtNum1;
         private NumericUpDown txtNum2;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button btnPlus;
+        private Button btnMinus;
+        private Button btnMultiply;
+        private Button btnDivide;
     }
 }
